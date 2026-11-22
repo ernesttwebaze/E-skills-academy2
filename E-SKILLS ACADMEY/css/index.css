@@ -1,0 +1,71 @@
+.hero {
+    text-align: center;
+    padding: 150px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    
+    /* Setting up the sliding background images */
+    background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    animation: sideSlide 12s infinite linear;
+}
+
+/* Dark overlay so the text remains easy to read */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1, .hero-buttons {
+    position: relative;
+    z-index: 2; /* Keeps text above the dark overlay */
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-outline:hover {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+    color: white;
+}
+
+/* Simple sideways slide animation */
+@keyframes sideSlide {
+    0% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+    100% {
+        background-position: 0% center;
+    }
+}

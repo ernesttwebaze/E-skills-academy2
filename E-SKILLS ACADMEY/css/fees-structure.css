@@ -1,0 +1,74 @@
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.fees-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.fees-table thead {
+    background-color: #ff0000;
+    color: white;
+}
+
+.fees-table th,
+.fees-table td {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.fees-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.fees-table td {
+    border-bottom: 1px solid #eee;
+}
+
+.fees-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.payment-methods {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.payment-methods h3 {
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.payment-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.payment-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.payment-logo {
+    height: 36px;
+    width: auto;
+    display: block;
+}
